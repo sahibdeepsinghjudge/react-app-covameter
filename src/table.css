@@ -42,7 +42,7 @@
 .tablex > tr>td :hover{
     background-color: #a3a3a3;
 }
-@media only screen and (max-width: 400px) {
+@media only screen and (max-width: 450px) {
     .tablex > tr>th,.tablex > tr>td{
         padding: 5px;
     }
