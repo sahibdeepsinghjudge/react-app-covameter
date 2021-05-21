@@ -35,20 +35,31 @@
     min-width: 400px;
    
 }
-
+.bg-ioslight{
+    background-color: #ffffff;
+}
+.flex-row{
+    display: flex;
+    flex: 1;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: baseline;
+}
 .tablex > tr>th,.tablex > tr>td{
     padding: 20px;
 }
 .tablex > tr>td :hover{
     background-color: #a3a3a3;
 }
-@media only screen and (max-width: 400px) {
+@media only screen and (max-width: 450px) {
     .tablex > tr>th,.tablex > tr>td{
         padding: 5px;
     }
     .tablex2{
         width: 100%;
         overflow: scroll;
+        -webkit-overflow: scroll;
     }
     .container2{
         width: 100%;

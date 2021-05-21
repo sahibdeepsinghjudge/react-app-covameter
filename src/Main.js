@@ -44,10 +44,13 @@ class Data extends React.Component {
           <div className="row">
           
           <div className="col-lg-6">
-              <br></br>
-        <div className="container">
+              <div className="flex-row">
+          <h2 className="h2 text-iossuccess mt-3  font-bold">Now   </h2><p className="text-iosdark  font-bold-sm "><small>data updated at {this.state.last_update}</small></p>
+          </div>
+        <div className="container bg-ioslight py-2 pr-0 rounded ">
           
-              <table className="table1 table ">
+          
+              <table className="table1 table mt-2 mx-auto">
                    <tr>
                        <td className=" text-iosred font-bold">Confirmed</td>
                        <td className="text-iosprimary font-bold">Active</td>
@@ -64,11 +67,11 @@ class Data extends React.Component {
                    <td className="  text-iosdark font-bold"><p className="mt-2 font-bold-sm">+{this.state.newDeaths}</p>{this.state.deaths}</td>
                    </tr>
                </table>
-               <p className="text-iosdark font-bold-sm ">data updated at {this.state.last_update}</p>
+             
                </div>
-               <hr className="hr" ></hr>
+               
                <h2 className="h2 text-iosprimary mt-3  font-bold">India</h2>
-               <div className="conatiner-fluid ">
+               <div className="conatiner-fluid bg-ioslight py-2 px-1 rounded">
               <table className="table tablex">
                    <tr>
                        <th className=" font-bold">Date</th>
@@ -81,14 +84,14 @@ class Data extends React.Component {
                </table> 
                </div>
                <br></br>
-               <hr className="hr" ></hr>
+               
                </div>
                
                
           <div className="col-lg-6">
           <h2 className="h2 text-iosred  font-bold">States</h2>
           
-            <div className="container-fluid tablex2 ">
+            <div className="container-fluid tablex2 bg-ioslight py-2 px-1 rounded">
           <table className="table tablex ">
                    <tr>
                        <th className=" text-iosdark font-bold">Name</th>
