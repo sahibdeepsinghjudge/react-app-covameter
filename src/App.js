@@ -1,7 +1,6 @@
-
-import Chartx_deaths from './chartDeaths';
-import Chartsx_Recovered from './chartRecover';
-import Chartsx_Confirmed from './charts';
+import Chartxdeaths from './chartDeaths';
+import ChartsxRecovered from './chartRecover';
+import ChartsxConfirmed from './charts';
 import Data from './Main';
 import Navbar from './navbar';
 
@@ -11,21 +10,22 @@ function App() {
      <Navbar />
      <br></br>
      <br></br>
-     <div className="container-fluid">
      
-       <div className="container"><Data />
-       <h2 className="h2 text-iosred p-3 m-2 ">Confirmed</h2>
-       <Chartsx_Confirmed />
-       <h2 className="h2 text-iossuccess p-3 m-2">Recoveries</h2>
-       <Chartsx_Recovered />
-       <h2 className="h2  p-3 m-2">Deaths</h2>
-       <Chartx_deaths />
+     
+       <Data />
+       <div className="container">
+       <h2 className="h2 text-iosred font-bold p-3 mt-4 ">Confirmed</h2>
+       <ChartsxConfirmed />
+       <h2 className="h2 text-iossuccess font-bold p-3 mt-4">Recoveries</h2>
+       <ChartsxRecovered />
+       <h2 className="h2 text-iosdark font-bold p-3 mt-4">Deaths</h2>
+       <Chartxdeaths />
        </div>
        
      
      </div>
       
-    </div>
+  
   );
 }
 

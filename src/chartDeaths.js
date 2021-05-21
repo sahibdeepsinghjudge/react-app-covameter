@@ -3,7 +3,7 @@ import {Line} from 'react-chartjs-2';
 
 
 
-class Chartx_deaths extends React.Component {
+class ChartxDeaths extends React.Component {
 
     constructor(props){
         super(props)
@@ -28,8 +28,8 @@ class Chartx_deaths extends React.Component {
                         label: 'Deaths',
                         fill: false,
                         lineTension: 0.5,
-                        backgroundColor: 'rgb(237,238,239)',
-                        borderColor: 'rgb(237,238,239)',
+                        backgroundColor: 'rgb(70, 70, 70)',
+                        borderColor: 'rgb(70, 70, 70)',
                         borderWidth: 4,
                         data: this.state.deaths
                       }
@@ -40,7 +40,7 @@ class Chartx_deaths extends React.Component {
     }
   render() {
     return (
-      <div className=" p-2 rounded shadow mt-4">
+      <div className=" mt-2">
         <Line
           data={this.state.chartdata}
           options={{
@@ -59,4 +59,4 @@ class Chartx_deaths extends React.Component {
     );
   }
 }
-export default Chartx_deaths
+export default ChartxDeaths

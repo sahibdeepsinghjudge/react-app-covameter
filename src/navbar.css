@@ -1,0 +1,98 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;600;700;800;900&display=swap');
+.navi {
+    background: hsl(0, 0%, 100%);
+    height: 50px;
+    width: 100%;
+    font-synthesis: none;
+    -moz-font-feature-settings: "kern";
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    direction: ltr;
+    transition: 0.2 ease;
+    -webkit-transition: 0.2 ease;
+    position: fixed;
+    z-index: 1500;
+    text-align: center;
+  }
+  .navdark {
+    background: hsla(240, 3%, 11%, 0.8);
+    height: 50px;
+    width: 100%;
+    font-synthesis: none;
+    -moz-font-feature-settings: "kern";
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    direction: ltr;
+   
+    transition: 0.2 ease;
+    -webkit-transition: 0.2 ease;
+    position: fixed;
+    color: #f2f2f7;
+    z-index: 1500;
+  }
+  
+  .scrolled {
+    background: rgba(255, 255, 255, 0.7);
+    -webkit-backdrop-filter: saturate(180%) blur(20px);
+    backdrop-filter: saturate(180%) blur(20px);
+    transition: 0.2 ease;
+    -webkit-transition: 0.2 ease;
+  }
+  
+  label.logo {
+    font-size: 26px;
+    line-height: 50px;
+    color: #0071BC;
+    font-family: 'Nunito', sans-serif;
+    font-weight: 800;
+  }
+  .navi ul {
+    float: right;
+    margin-right: 20px;
+  }
+  .navi ul li {
+    display: inline-block;
+    line-height: 50px;
+    margin: 0 5px;
+  }
+  .navi ul li a {
+    color: inherit;
+    font-size: 12px;
+    padding: 7px 13px;
+    border-radius: 3px;
+    border-radius: 20px;
+    text-transform: uppercase;
+  }
+  .navi ul li a:hover{
+    color: #f2f2f7;
+    background: #0a84ff;
+    border-radius: 20px;
+    transition: 0.5s;
+  }
+  .checkbtn {
+    font-size: 30px;
+    color: inherit;
+    float: right;
+    line-height: 50px;
+    margin-right: 40px;
+    cursor: pointer;
+    display: none;
+  }
+  #check {
+    display: none;
+  }
+  @media (max-width: 952px) {
+    
+    .navi ul li a {
+      font-size: 16px;
+    }
+    .ios-control {
+      background: #e4e4e4;
+      padding: 5px;
+      width: 500px;
+      border-radius: 10px;
+      height: 50px;
+      border: 1px rgb(209, 209, 214);
+      font-weight: 500;
+    }
+  }

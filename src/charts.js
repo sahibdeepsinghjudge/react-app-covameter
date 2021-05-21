@@ -3,7 +3,7 @@ import {Line} from 'react-chartjs-2';
 
 
 
-class Chartsx_Confirmed extends React.Component {
+class ChartsxConfirmed extends React.Component {
 
     constructor(props){
         super(props)
@@ -28,8 +28,8 @@ class Chartsx_Confirmed extends React.Component {
                         label: 'Confirmed',
                         fill: false,
                         lineTension: 0.5,
-                        backgroundColor: 'rgb(255,59,48)',
-                        borderColor: 'rgb(255,59,48)',
+                        backgroundColor: 'rgb(252, 93, 93)',
+                        borderColor: 'rgb(252, 93, 93)',
                         borderWidth: 4,
                         data: this.state.confirmed
                       }
@@ -40,7 +40,7 @@ class Chartsx_Confirmed extends React.Component {
     }
   render() {
     return (
-      <div className=" p-2 rounded shadow mt-4">
+      <div className=" mt-2">
         <Line
           data={this.state.chartdata}
           options={{
@@ -59,4 +59,4 @@ class Chartsx_Confirmed extends React.Component {
     );
   }
 }
-export default Chartsx_Confirmed
+export default ChartsxConfirmed

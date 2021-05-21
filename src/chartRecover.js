@@ -3,7 +3,7 @@ import {Line} from 'react-chartjs-2';
 
 
 
-class Chartsx_Recovered extends React.Component {
+class ChartsxRecovered extends React.Component {
 
     constructor(props){
         super(props)
@@ -28,8 +28,8 @@ class Chartsx_Recovered extends React.Component {
                         label: 'Recovered',
                         fill: false,
                         lineTension: 0.5,
-                        backgroundColor: 'rgb(53,199,89)',
-                        borderColor: 'rgb(53,199,89)',
+                        backgroundColor: 'rgb(98, 201, 158)',
+                        borderColor: 'rgb(98, 201, 158)',
                         borderWidth: 4,
                         data: this.state.recovered
                       }
@@ -40,7 +40,7 @@ class Chartsx_Recovered extends React.Component {
     }
   render() {
     return (
-      <div className=" p-2 rounded shadow mt-4">
+      <div className="  mt-2">
         <Line
           data={this.state.chartdata}
           options={{
@@ -59,4 +59,4 @@ class Chartsx_Recovered extends React.Component {
     );
   }
 }
-export default Chartsx_Recovered
+export default ChartsxRecovered
