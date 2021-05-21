@@ -49,6 +49,7 @@
     .tablex2{
         width: 100%;
         overflow: scroll;
+        -webkit-overflow: scroll;
     }
     .container2{
         width: 100%;
