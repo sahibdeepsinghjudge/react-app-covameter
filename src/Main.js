@@ -1,5 +1,8 @@
 import React from "react";
 import "./table.css"
+import Chartxdeaths from './chartDeaths';
+import ChartsxRecovered from './chartRecover';
+import ChartsxConfirmed from './charts';
 class Data extends React.Component {
     constructor(props) {
       super(props);
@@ -66,6 +69,7 @@ class Data extends React.Component {
                    
                    <td className="  text-iosdark font-bold"><p className="mt-2 font-bold-sm">+{this.state.newDeaths}</p>{this.state.deaths}</td>
                    </tr>
+                   
                </table>
              
                </div>
@@ -80,16 +84,29 @@ class Data extends React.Component {
                        <th className=" text-iossuccess font-bold">Recoverd</th>
                        
                    </tr>
-                   {this.state.items.slice(0,20)}
+                   {this.state.items.slice(0,14)}
                </table> 
                </div>
                <br></br>
                
+               <div className="container bg-ioslight rounded p-3 mt-4">
+       <h2 className="h2 text-iosred font-bold  ">Confirmed</h2>
+       <ChartsxConfirmed />
+       </div>
+       <div className="container bg-ioslight rounded p-3 mt-4">
+       <h2 className="h2 text-iossuccess font-bold ">Recoveries</h2>
+       <ChartsxRecovered />
+       </div>
+       <div className="container bg-ioslight rounded p-3 mt-4">
+       <h2 className="h2 text-iosdark font-bold">Deaths</h2>
+       <Chartxdeaths />
+       </div>
+       
                </div>
                
                
           <div className="col-lg-6">
-          <h2 className="h2 text-iosred  font-bold">States</h2>
+          <h2 className="h2 text-iosred  font-bold mt-3">States</h2>
           
             <div className="container-fluid tablex2 bg-ioslight py-2 px-1 rounded">
           <table className="table tablex ">

@@ -1,6 +1,4 @@
-import Chartxdeaths from './chartDeaths';
-import ChartsxRecovered from './chartRecover';
-import ChartsxConfirmed from './charts';
+
 import Data from './Main';
 import Navbar from './navbar';
 
@@ -13,15 +11,11 @@ function App() {
      
      
        <Data />
-       <div className="container">
-       <h2 className="h2 text-iosred font-bold p-3 mt-4 ">Confirmed</h2>
-       <ChartsxConfirmed />
-       <h2 className="h2 text-iossuccess font-bold p-3 mt-4">Recoveries</h2>
-       <ChartsxRecovered />
-       <h2 className="h2 text-iosdark font-bold p-3 mt-4">Deaths</h2>
-       <Chartxdeaths />
-       </div>
        
+       <div className="footer container bg-ioslight p-3 mt-3 rounded text-center font-bold-sm">
+      Api by <a href="https://www.covid19india.org/">https://www.covid19india.org/</a> 
+      <p>Developed by: jwd</p>
+    </div>
      
      </div>
       

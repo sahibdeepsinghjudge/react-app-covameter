@@ -26,9 +26,9 @@ class ChartxDeaths extends React.Component {
                     datasets: [
                       {
                         label: 'Deaths',
-                        fill: false,
+                        fill: true,
                         lineTension: 0.5,
-                        backgroundColor: 'rgb(70, 70, 70)',
+                        backgroundColor: 'rgba(70, 70, 70,0.7)',
                         borderColor: 'rgb(70, 70, 70)',
                         borderWidth: 4,
                         data: this.state.deaths
@@ -43,16 +43,18 @@ class ChartxDeaths extends React.Component {
       <div className=" mt-2">
         <Line
           data={this.state.chartdata}
-          options={{
-            title:{
-              display:true,
-              text:'Covid-19 Deaths',
-              fontSize:20
+          options={
+            {
+              borderDash:[1],
+            scales: {
+             
+                y: {
+                    display:false
+                },
+                x: {
+                  display:false
+              }
             },
-            legend:{
-              display:false,
-              position:'right'
-            }
           }}
         />
       </div>

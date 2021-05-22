@@ -26,11 +26,13 @@ class ChartsxConfirmed extends React.Component {
                     datasets: [
                       {
                         label: 'Confirmed',
-                        fill: false,
-                        lineTension: 0.5,
-                        backgroundColor: 'rgb(252, 93, 93)',
-                        borderColor: 'rgb(252, 93, 93)',
-                        borderWidth: 4,
+                        fill: true,
+                        
+                        borderColor:'rgb(252, 93, 93)',
+                        backgroundColor: 'rgba(252, 93, 93,0.7)',
+                        gridLines: {
+                          display:false,
+                        },
                         data: this.state.confirmed
                       }
                     ]
@@ -43,16 +45,18 @@ class ChartsxConfirmed extends React.Component {
       <div className=" mt-2">
         <Line
           data={this.state.chartdata}
-          options={{
-            title:{
-              display:true,
-              text:'Covid-19 Confirmed cases',
-              fontSize:20
+          options={
+            {
+              borderDash:[1],
+            scales: {
+             
+                y: {
+                    display:false
+                },
+                x: {
+                  display:false
+              }
             },
-            legend:{
-              display:false,
-              position:'right'
-            }
           }}
         />
       </div>
